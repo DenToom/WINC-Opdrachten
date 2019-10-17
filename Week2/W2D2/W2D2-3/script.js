@@ -118,7 +118,7 @@ console.log(result);
 
 // array superheroes < 190 pounds
 const result2 = superheroes.filter(function(hero) {
-  //console.log(parseInt(hero.weight));
+  console.log(parseInt(hero.weight));
   return parseInt(hero.weight) < 190;
 });
 
@@ -126,7 +126,7 @@ console.log(result2);
 
 // array met names superheroes === 200 pounds
 const result3 = superheroes.filter(function(hero) {
-  //console.log(parseInt(hero.weight));
+  console.log(parseInt(hero.weight));
   return parseInt(hero.weight) === 200;
 
 });

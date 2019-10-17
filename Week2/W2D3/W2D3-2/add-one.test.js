@@ -7,6 +7,11 @@ test("Add 1 to each item in myArray", function() {
   var expected = [32, 58, 13, 6];
   var output = addOne(myArray);
 
+// verwacht in deze test dat elk item in de array +1 krijgt
   expect(output).toEqual(expected);
+
+// verwacht originele array niet wordt gewijzigd.   
   expect(myArray).toEqual(unchanged);
 });
+
+
