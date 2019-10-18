@@ -1,12 +1,4 @@
 getMovies().then(responseJSON => {
-  .then(responseJSON => {
-  let body = document.querySelector('body');
-  let pre = document.createElement('pre');
-  let code = document.createElement('code');
-  body.appendChild(pre).appendChild(code);
-  code.textContent = JSON.stringify(data, null, ' ');
-});
-
   const movies = responseJSON;
   setMovieGenres(movies);
   console.log('hier is je data om iets mee te gaan doen:', responseJSON);
@@ -22,3 +14,12 @@ const setMovieGenres = function(movieData) {
   });
 };
 
+// Opdracht: Maak eerst aparte functies voor het ophalen van je data.
+// Bijvoorbeeld: getTopRatedMovies() of getTopRatedActionMovies()
+
+// HOE DIT MOET SNAP IK op dit moment NIET!!!
+
+// Haal 1 film op op basis van de film ID (dus niet het genre ID)
+// (hoe kun je de ID achterhalen?).
+
+// ID Achterhalen via imdb wellicht?

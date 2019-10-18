@@ -8,5 +8,5 @@ async function getMovies() {
     .then(response => response.json())
     .catch(error => console.log(error));
 
-  return result;
+  return await result;
 }
