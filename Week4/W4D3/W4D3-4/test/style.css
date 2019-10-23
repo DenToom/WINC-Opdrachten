@@ -1,0 +1,30 @@
+body {
+  margin: 100px;
+}
+
+.box {
+  border: 1px solid green;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: #3dccc7;
+  /* transition-duration: 1000ms;
+  transition-property: background, transform;
+  transition-timing-function: cubic-bezier(1, 0.11, 0.22, 1.41);
+  transition-delay: 2s; */
+
+  /* transition: 1s background ease-in, 500ms transform ease-out 1s; */
+  transition: all 500ms ease;
+}
+
+.box:hover {
+  background: #ff6b6b;
+  transform: rotate(45deg);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}

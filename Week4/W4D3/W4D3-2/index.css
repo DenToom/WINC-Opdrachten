@@ -1,0 +1,83 @@
+@import url(//fonts.googleapis.com/css?family=Oswald:700);
+
+body {
+  /* background: #231f20; */
+  background: #FFFF
+  text-align: center;
+}
+
+h1::before {
+  content: '';
+  background: #4a90e2;
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  border-radius: 200px 10px 10px 200px;
+  -moz-border-radius: 200px 10px 10px 200px;
+  -webkit-border-radius: 200px 10px 10px 200px;
+  border: 0px solid #000000;
+  position: static;
+}
+
+h1 {
+  color: black;
+  font-family: 'Oswald';
+  font-weight: 700;
+  position: relative;
+  margin: 30px auto;
+  text-transform: uppercase;
+  width: 550px;
+}
+
+h1::after {
+  content: '';
+  background: #4a90e2;
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  border-radius: 0px 200px 200px 0px;
+  -moz-border-radius: 0px 200px 200px 0px;
+  -webkit-border-radius: 0px 200px 200px 0px;
+  border: 0px solid #000000;
+  position: static;
+}
+
+/* selector voor het linker halve cirkeltje, selector voor het rechter halve cirkeltje {
+  // gezamelijke eigenschappen van de halve cirkels: 
+  // - het is Winc blauw ... background:#4A90E2;
+  // - content is empty string 
+  // - display... block? Inline-block?
+  // - aanta px hoog 
+  // - aantal px breed 
+  // - absolute positie 
+  }
+  
+  selector voor het linker halve cirkeltje {  
+  // border radius, generator: https://www.cssmatic.com/border-radius 
+  // Positioneer je halve rondje met left en top
+  }
+  
+  selector voor het rechter halve cirkeltje {  
+  // border radius, generator: https://www.cssmatic.com/border-radius 
+  // Positioneer je halve rondje met left en top
+  } */
+
+
+  .link-one:hover {
+      background-color:#4169E1;
+  }
+
+  .link-two:active {
+    background-color:red;
+    ;
+}
+
+.link-three:visited {
+  color: yellow;
+}
+
+
+.link-four:focus {
+  background-color:purple;
+  ;
+}
